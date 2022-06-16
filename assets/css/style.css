@@ -252,9 +252,9 @@ body._lock {
 
 @media screen and (max-width: 590px) {
     .header__logo .header__logo__part2 svg {
-        width: 41px;
-        height: 52px;
-        padding: 0;
+        width: 36px;
+        height: 45px;
+        padding: 0 5px;
     }
 }
 
@@ -804,8 +804,8 @@ body._lock {
 
 @media screen and (max-width: 1213px) {
     .footer .footer__item__one .item__plus {
-        font-size: 12px;
-        line-height: 6px;
+        font-size: 16px;
+        line-height: 8px;
     }
 }
 
