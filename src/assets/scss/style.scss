@@ -1,0 +1,29 @@
+@import "base/_mixins.scss";
+@import "base/_vars.scss";
+@import "base/nullstyle";
+@import "base/fonts";
+@import "base/wrapper";
+
+[class*="__container"] {
+  max-width: 1647px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+body {
+  &._lock {
+    overflow: hidden;
+  }
+  font-family: "Suisse Int'l";
+  font-style: normal;
+  font-size: 21px;
+  line-height: 28px;
+  font-weight: 500;
+  background: #000055;
+  color: #e8e8e8;
+}
+
+@import "blocks/header.scss";
+@import "blocks/info.scss";
+@import "blocks/footer.scss";
+@import "blocks/popup.scss";

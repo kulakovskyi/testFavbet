@@ -1,0 +1,341 @@
+.info__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include breakpoint(1144px) {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 0 40px 0;
+  }
+
+  .info__image {
+    position: relative;
+    bottom: -100px;
+    z-index: -1;
+
+    @include breakpoint(1144px) {
+      bottom: -107px;
+    }
+
+    @include breakpoint(590px) {
+      bottom: -90px;
+    }
+
+    @include breakpoint(408px) {
+      bottom: -80px;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    .image__text {
+      position: absolute;
+      bottom: 110px;
+      right: 50px;
+
+      @include breakpoint(1144px) {
+        bottom: 40%;
+        transform: translateY(40%);
+        right: 0px;
+      }
+
+      @include breakpoint(734px) {
+        right: -55px;
+      }
+
+      @include breakpoint(590px) {
+        right: -15px;
+      }
+
+      .image__text__name {
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 31px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+
+        @include breakpoint(1530px) {
+          font-size: 16px;
+          line-height: 22px;
+        }
+
+        @include breakpoint(734px) {
+          max-width: 184px;
+        }
+
+        @include breakpoint(590px) {
+          font-size: 9px;
+          line-height: 11px;
+          max-width: 92px;
+        }
+      }
+
+      .image__text__work {
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 28px;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+
+        @include breakpoint(1530px) {
+          font-size: 11px;
+          line-height: 20px;
+        }
+
+        @include breakpoint(590px) {
+          font-size: 6px;
+          line-height: 10px;
+        }
+      }
+    }
+  }
+}
+
+.info__match__row {
+  display: flex;
+  gap: 44px;
+  align-items: center;
+  align-self: flex-start;
+  margin: 0 0 96px 0;
+
+  @include breakpoint(1530px) {
+    gap: 30px;
+    margin: 0 0 60px 0;
+  }
+
+  @include breakpoint(1144px) {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+  }
+
+  @include breakpoint(590px) {
+    gap: 15px;
+    top: 47px;
+    left: 17px;
+  }
+
+  .info__time-date {
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 39px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+
+    @include breakpoint(1530px) {
+      font-size: 22px;
+      line-height: 29px;
+    }
+
+    @include breakpoint(590px) {
+      font-size: 12px;
+      line-height: 16px;
+    }
+
+    .info__date {
+      border-radius: 8px 8px 0 0;
+      background: #ff267e;
+      padding: 8px 9px 8px 12px;
+      text-align: center;
+    }
+
+    .info__time {
+      border-radius: 0 0 8px 8px;
+      padding: 8px 9px 8px 12px;
+      border: 2.67958px solid #ff267e;
+      text-align: center;
+    }
+  }
+
+  .info__match {
+    font-size: 58px;
+    line-height: 70px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    @include breakpoint(1530px) {
+      font-size: 42px;
+      line-height: 50px;
+    }
+
+    @include breakpoint(590px) {
+      font-size: 22px;
+      line-height: 24px;
+    }
+
+    .info__match__comand {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      @include breakpoint(1530px) {
+        gap: 15px;
+      }
+
+      @include breakpoint(590px) {
+        gap: 7px;
+      }
+    }
+
+    img {
+      max-width: 56px;
+
+      @include breakpoint(590px) {
+        max-width: 26px;
+      }
+    }
+
+    span {
+      font-family: "Wulkan Display";
+      font-weight: 600;
+      font-size: 58px;
+      line-height: 70px;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+
+      @include breakpoint(590px) {
+        font-size: 22px;
+        line-height: 24px;
+      }
+    }
+  }
+}
+
+.info__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .info__text__bonus {
+    font-size: 34px;
+    line-height: 38px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    padding: 21px 29px;
+    background: #ff267e;
+    margin: 0 0 20px 0;
+    white-space: nowrap;
+
+    @include breakpoint(1530px) {
+      font-size: 24px;
+      line-height: 27px;
+      margin: 0 0 32px 0;
+      padding: 16px 19px;
+      align-self: flex-start;
+    }
+
+    @include breakpoint(590px) {
+      width: 100%;
+      text-align: center;
+      white-space: normal;
+      font-size: 19px;
+      line-height: 21px;
+      margin: 0 0 15px 0;
+    }
+
+    @include breakpoint(378px) {
+      font-size: 16px;
+      padding: 16px 12px;
+    }
+  }
+
+  .info__text__price {
+    font-size: 154px;
+    line-height: 142px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin: 0 0 61px 0;
+
+    @include breakpoint(1530px) {
+      font-size: 110px;
+      line-height: 101px;
+      margin: 0 0 46px 0;
+    }
+
+    @include breakpoint(590px) {
+      font-size: 70px;
+      line-height: 79px;
+      margin: 0 0 13px 0;
+    }
+  }
+
+  .info__text__button {
+    margin: 0 0 30px 0;
+
+    @include breakpoint(1530px) {
+      margin: 0 0 21px 0;
+    }
+  }
+
+  .button__info {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 42px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #00003d;
+    padding: 25px 78px;
+    background: #05c489;
+    border-radius: 4.72222px;
+    position: relative;
+    transition: 1s ease;
+
+    svg {
+      position: absolute;
+      left: 0;
+      top: 0;
+      fill: none;
+      stroke: rgb(0, 17, 248);
+      stroke-width: 5;
+      stroke-linecap: round;
+      stroke-dasharray: 150 1280;
+      stroke-dashoffset: 150;
+      transition: 2s ease;
+    }
+
+    &:hover {
+      transition: 2s ease;
+      background: #4f95da;
+    }
+
+    &:hover svg {
+      stroke-dasharray: 1650;
+      stroke-linecap: round;
+    }
+
+    @include breakpoint(1530px) {
+      font-size: 22px;
+      line-height: 29px;
+      padding: 19px 55px;
+    }
+
+    @include breakpoint(378px) {
+      padding: 19px 35px;
+    }
+  }
+
+  .info__text__more {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: 0.05em;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+    color: #e8e8e8;
+    transition: 0.3s ease;
+
+    &:hover {
+      color: #4d4949;
+    }
+
+    @include breakpoint(1530px) {
+      font-size: 12px;
+      line-height: 16px;
+    }
+  }
+}
